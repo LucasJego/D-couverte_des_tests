@@ -22,7 +22,7 @@ def translate(string)
 				$word = string
 				break
 
-			# Si la lettre du tableau letter_array est une consonne, passer à la lettre suivante
+			# Si la lettre du tableau letter_array est une consonne
 			elsif consonants.include?(char)
 
 				array_new_word = letter_array[(index_letter_array+1)..-1] + letter_array[0..index_letter_array]
@@ -42,6 +42,8 @@ def translate(string)
 		
 		return $word + "ay"
 	end
+
+	# Si il y avait plusieurs mots au départ, on remet les nouveaux mots dans l'ordre
 
 end
 
