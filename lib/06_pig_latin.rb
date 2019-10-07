@@ -26,14 +26,14 @@ def translate(string)
 			elsif consonants.include?(char)
 
 				array_new_word = letter_array[(index_letter_array+1)..-1] + letter_array[0..index_letter_array]
+
 				$word = array_new_word.join("")
 			
+
+			# Sinon, on sort du if
+			else 
 				break
 
-			# Sinon, si la lettre est une voyelle, prendre les lettres situées avant et les intégrer à la fin du mot
-			else 
-				array_new_word = letter_array[index_letter_array..-1] + letter_array[0..index_letter_array-1]
-				word = array_new_word.join("")
 
 			end
 
@@ -44,3 +44,4 @@ def translate(string)
 	end
 
 end
+
